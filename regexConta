@@ -1,0 +1,105 @@
+var nomeConta = ZDK.Page.getField('Account_Name').getValue();
+var correctedname11 = nomeConta.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+ZDK.Page.getField('Account_Name').setValue(correctedname11);
+
+var compraEmpresa = ZDK.Page.getField('Atualmente_compra_de_qual_empresa').getValue();
+if (compraEmpresa != null) {
+    var correctedname1 = compraEmpresa.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Atualmente_compra_de_qual_empresa').setValue(correctedname1);
+}
+
+var bairroCobranca = ZDK.Page.getField('Bairro_de_Cobran_a').getValue();
+if (bairroCobranca != null) {
+    var correctedname2 = bairroCobranca.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Bairro_de_Cobran_a').setValue(correctedname2);
+}
+
+var bairroEntrega = ZDK.Page.getField('Bairro_de_Entrega').getValue();
+if (bairroEntrega != null) {
+    var correctedname3 = bairroEntrega.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Bairro_de_Entrega').setValue(correctedname3);
+}
+
+var bairroCliente = ZDK.Page.getField('Bairro_do_cliente').getValue();
+if (bairroCliente != null) {
+    var correctedname4 = bairroCliente.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Bairro_do_cliente').setValue(correctedname4);
+}
+
+var cidadeCobranca = ZDK.Page.getField('Billing_City').getValue();
+if (cidadeCobranca != null) {
+    var correctedname5 = cidadeCobranca.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Billing_City').setValue(correctedname5);
+}
+
+var cidadeEntrega = ZDK.Page.getField('Shipping_City').getValue();
+if (cidadeEntrega != null) {
+    var correctedname6 = cidadeEntrega.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Shipping_City').setValue(correctedname6);
+}
+
+var municipioCliente = ZDK.Page.getField('Municipio_do_cliente').getValue();
+if (municipioCliente != null) {
+    var correctedname7 = municipioCliente.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Municipio_do_cliente').setValue(correctedname7);
+}
+
+var complementoCobranca = ZDK.Page.getField('Complemento_de_Cobran_a').getValue();
+if (complementoCobranca != null) {
+    var correctedname8 = complementoCobranca.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Complemento_de_Cobran_a').setValue(correctedname8);
+}
+
+var complementoEntrega = ZDK.Page.getField('Complemento_de_entrega').getValue();
+if (complementoEntrega != null) {
+    var correctedname9 = complementoEntrega.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Complemento_de_entrega').setValue(correctedname9);
+}
+
+var complementoCliente = ZDK.Page.getField('Complemento_do_Cliente').getValue();
+if (complementoCliente != null) {
+    var correctedname10 = complementoCliente.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Complemento_do_Cliente').setValue(correctedname10);
+}
+
+var descricao = ZDK.Page.getField('Descr_Rede').getValue();
+if (descricao != null) {
+    var correctedname13 = descricao.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Descr_Rede').setValue(correctedname13);
+}
+
+var endereco = ZDK.Page.getField('Endereco_do_cliente').getValue();
+if (endereco != null) {
+    var correctedname14 = endereco.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Endereco_do_cliente').setValue(correctedname14);
+}
+
+var mensagem = ZDK.Page.getField('Mensagem').getValue();
+if (mensagem != null) {
+    var correctedname15 = mensagem.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Mensagem').setValue(correctedname15);
+}
+
+var nomeFantasia = ZDK.Page.getField('N_Fantasia').getValue();
+if (nomeFantasia != null) {
+    var correctedname17 = nomeFantasia.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('N_Fantasia').setValue(correctedname17);
+}
+
+var rede = ZDK.Page.getField('Rede').getValue();
+if (rede != null) {
+    var correctedname18 = rede.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Rede').setValue(correctedname18);
+}
+
+var ruaCobranca = ZDK.Page.getField('Billing_Street').getValue();
+if (ruaCobranca != null) {
+    var correctedname19 = ruaCobranca.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Billing_Street').setValue(correctedname19);
+}
+
+var ruaEntrega = ZDK.Page.getField('Shipping_Street').getValue();
+if (ruaEntrega != null) {
+    var correctedname20 = ruaEntrega.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    ZDK.Page.getField('Shipping_Street').setValue(correctedname20);
+}  
